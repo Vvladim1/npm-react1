@@ -14,7 +14,7 @@ const Profile = () => {
           />
         </div>
         <div className={s.nameBlock}>
-          <h3>Vladimir</h3>
+          <h3>Vladimir Volovenko</h3>
           <p>novice developer from Chercassy</p>
         </div>
       </div>
