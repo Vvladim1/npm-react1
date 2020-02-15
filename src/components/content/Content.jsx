@@ -1,5 +1,5 @@
 import React from "react";
-import MyPsts from "./MyPosts/MyPosts";
+import MyPosts from "./MyPosts/MyPosts";
 import Profile from "./profile/Profile";
 
 const Content = props => {
@@ -7,7 +7,7 @@ const Content = props => {
   return (
     <div>
       <Profile />
-      <MyPsts
+      <MyPosts
         state={props.state}
         dispatch={props.dispatch}
       />
