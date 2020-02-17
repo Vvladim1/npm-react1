@@ -10,10 +10,10 @@ import {
 const Dialogs = props => {
 
   let dialogsElement = props.state.dialogs.map(data => (
-    <DialogItem name={data.name} id={data.id} />
+    <DialogItem name={data.name} id={data.id} key={data.id} />
   ));
   let messagesElements = props.state.messages.map(datas => (
-    <Message message={datas.message} />
+    <Message message={datas.message} key={datas.id} />
   ));
 
   let newMessageBody = props.state.newMessageBody;
