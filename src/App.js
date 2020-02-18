@@ -8,6 +8,7 @@ import { Route } from "react-router-dom";
 import Musik from "./components/musik/musik";
 import News from "./components/news/news";
 import Settings from "./components/settings/settings";
+import UsersContainer from "./components/users/usersContainer";
 
 const App = props => {
   // debugger;
@@ -26,6 +27,12 @@ const App = props => {
               <Content
                 store={props.store} 
               />
+            )}
+          />
+          <Route
+            path="/user"
+            render={() => (
+              <UsersContainer/>
             )}
           />
           <Route path="/news" component={News} />
