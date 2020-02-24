@@ -1,5 +1,9 @@
 .userPhoto {
-    width: 100px;
-    height: 100px;
-    border-radius: 25%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.wrapper {
+    padding: 10px;
 }
