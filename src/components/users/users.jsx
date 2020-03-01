@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./users.module.css";
-// import * as axios from "axios";
 import userPhoto from "../../assets/images/userImg.jpg";
 
 const Users = (props) => {
