@@ -9,14 +9,13 @@ const Profile = props => {
   }
 
  let jobStatuse = () => {
-  if (!props.profile.lookingForAJob){
+  if (props.profile.lookingForAJob){
     return <img width='10%'
                 alt='looking for a job' 
                 src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQP8jIb8sIwNHA6uG09glPPq8JClmfDkj3UpYl23sluT7EaRQzo'/>
   } else {
     return <img
-    
-    alt='all raight' 
+    alt='all right' 
     src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4WPeTTr-SvJ5NJ6QIJVMLMAvP1xsPC8cKwGmR2x64wpf0Oqf3'/>
   }}
 
@@ -24,17 +23,18 @@ const Profile = props => {
   return (
     <div>
       <img
-        width="70%"
+        width="60%" 
         src="https://img.tsn.ua/cached/1559557468/tsn-044a03ab1c6615c0753d2de60e24b711/thumbs/1340x530/3f/5b/719c96f86272e0c8dd279ea342325b3f.jpeg"
       />
 
       <div className={s.profile}>
         <div className={s.ava}>
           <img src={props.profile.photos.large} alt="user" />
-  <p>Ищу работу: {jobStatuse()}</p>
+  <p>Ищу работу:</p>
+  <div>{jobStatuse()}</div>
           <p>{props.profile.lookingForAJobDescription}</p>
           <p>мои контакты:</p>
-  <NavLink to='{props.profile.contacts.facebook}'>facebook</NavLink>
+  <NavLink to={props.profile.contacts.facebook}>facebook</NavLink>
   {/* <NavLink >website: {props.profile.contacts.website}</NavLink>
   <NavLink >vk: {props.profile.contacts.vk}</NavLink>
   <NavLink >twitter: {props.profile.contacts.twitter}</NavLink>
